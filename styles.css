@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+html, body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+input{
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+.center {
+  align-self: center;
+}
+
+.flow-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+}
+
+.content{
+position: relative;
+margin-top: 100px;
+
+}
+
+
+.title, .controls, .button {
+  flex: none;
+}
+
+.title{
+  font-size: 30px;
+  border-bottom: solid #000000;
+  padding: 10px;
+}
+
+
+.buttons-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 350px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #ff9900;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  border: solid #ff9900 1px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.button:hover{
+  background-color: #ffffff;
+  color: #ff9900;
+}
+
+
+
+.todo-list {
+  flex: 1 1 0;
+  margin-top: 20px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.todo-delete {
+  margin: 10px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #ff1616;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  border: solid #ff1616 1px;
+  font-size: 20px;
+
+  transition: 0.2s;
+}
+
+.todo-delete:hover{
+  background-color: #ffffff;
+  color: #ff1616
+}
+
+
+.todo-checkbox {
+  margin: 10px;
+}
+
+.todo-container {
+  position: relative;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+  display: inline-flex;
+  width: 100%;
+}
+
+.todo-container:first-of-type {
+  border-top: 1px solid #333;
+}
+
+
+
+#item-count, #unchecked-count{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.item-count{
+  background-color: #3d7b00;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.unchecked-count{
+  background-color: #f53146;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.item-count, .unchecked-count{
+  color: #ffffff;
+}
+
+
+.task-description-input{
+  width: 60%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 80px;
+  padding: 10px;
+  font-size: 24px;
+  border-width: 0;
+  border-bottom: solid #ff9900 1px;
+}
+
+.align-right{
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+}
